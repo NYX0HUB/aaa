@@ -1,184 +1,51 @@
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local Frame_2 = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local nyx = Instance.new("TextLabel")
-local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
-local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
-local hub = Instance.new("TextLabel")
-local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
-local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
-local timelabel = Instance.new("TextLabel")
-local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
-local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
-local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
-local DropShadowHolder = Instance.new("Frame")
-local DropShadow = Instance.new("ImageLabel")
-local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
-
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.ResetOnSpawn = false
-
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
-Frame.BackgroundTransparency = 0.200
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.745762706, 0, 0.0617433414, 0)
-Frame.Size = UDim2.new(0.221016943, 0, 0.14164649, 0)
-
-UICorner.CornerRadius = UDim.new(0, 9)
-UICorner.Parent = Frame
-
-Frame_2.Parent = Frame
-Frame_2.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
-Frame_2.BackgroundTransparency = 0.500
-Frame_2.BorderColor3 = Color3.fromRGB(8, 8, 8)
-Frame_2.BorderSizePixel = 0
-Frame_2.Size = UDim2.new(1, 0, 0.470085472, 0)
-
-UICorner_2.CornerRadius = UDim.new(0, 9)
-UICorner_2.Parent = Frame_2
-
-nyx.Name = "nyx"
-nyx.Parent = Frame_2
-nyx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-nyx.BackgroundTransparency = 1.000
-nyx.BorderColor3 = Color3.fromRGB(0, 0, 0)
-nyx.BorderSizePixel = 0
-nyx.Position = UDim2.new(0.147239268, 0, 0, 0)
-nyx.Size = UDim2.new(0.352760732, 0, 0.909090936, 0)
-nyx.Font = Enum.Font.SourceSansBold
-nyx.Text = "NYX"
-nyx.TextColor3 = Color3.fromRGB(207, 207, 0)
-nyx.TextSize = 60.000
-nyx.TextWrapped = true
-
-UIAspectRatioConstraint.Parent = nyx
-UIAspectRatioConstraint.AspectRatio = 1.860
-
-UITextSizeConstraint.Parent = nyx
-UITextSizeConstraint.MaxTextSize = 60
-
-hub.Name = "hub"
-hub.Parent = Frame_2
-hub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-hub.BackgroundTransparency = 1.000
-hub.BorderColor3 = Color3.fromRGB(0, 0, 0)
-hub.BorderSizePixel = 0
-hub.Position = UDim2.new(0.432515323, 0, -0.0545454547, 0)
-hub.Size = UDim2.new(0.493865043, 0, 1.0181818, 0)
-hub.Font = Enum.Font.SourceSansBold
-hub.Text = "HUB"
-hub.TextColor3 = Color3.fromRGB(255, 255, 255)
-hub.TextScaled = true
-hub.TextSize = 70.000
-hub.TextWrapped = true
-
-UITextSizeConstraint_2.Parent = hub
-UITextSizeConstraint_2.MaxTextSize = 60
-
-UIAspectRatioConstraint_2.Parent = Frame_2
-UIAspectRatioConstraint_2.AspectRatio = 5.927
-
-timelabel.Name = "timelabel"
-timelabel.Parent = Frame
-timelabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-timelabel.BackgroundTransparency = 1.000
-timelabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-timelabel.BorderSizePixel = 0
-timelabel.Position = UDim2.new(0.033742331, 0, 0.52136755, 0)
-timelabel.Size = UDim2.new(0.932515323, 0, 0.427350432, 0)
-timelabel.Font = Enum.Font.SourceSans
-timelabel.Text = " 0 H,  0M, 0S"
-timelabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-timelabel.TextScaled = true
-timelabel.TextSize = 40.000
-timelabel.TextWrapped = true
-
-UIAspectRatioConstraint_3.Parent = timelabel
-UIAspectRatioConstraint_3.AspectRatio = 6.080
-
-UITextSizeConstraint_3.Parent = timelabel
-UITextSizeConstraint_3.MaxTextSize = 40
-
-UIAspectRatioConstraint_4.Parent = Frame
-UIAspectRatioConstraint_4.AspectRatio = 2.786
-
-DropShadowHolder.Name = "DropShadowHolder"
-DropShadowHolder.Parent = Frame
-DropShadowHolder.BackgroundTransparency = 1.000
-DropShadowHolder.BorderSizePixel = 0
-DropShadowHolder.Size = UDim2.new(1, 0, 1, 0)
-DropShadowHolder.ZIndex = 0
-
-DropShadow.Name = "DropShadow"
-DropShadow.Parent = DropShadowHolder
-DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
-DropShadow.BackgroundTransparency = 1.000
-DropShadow.BorderSizePixel = 0
-DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
-DropShadow.Size = UDim2.new(1, 47, 1, 47)
-DropShadow.ZIndex = 0
-DropShadow.Image = "rbxassetid://6014261993"
-DropShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
-DropShadow.ImageTransparency = 0.500
-DropShadow.ScaleType = Enum.ScaleType.Slice
-DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
-
-UIAspectRatioConstraint_5.Parent = ScreenGui
-UIAspectRatioConstraint_5.AspectRatio = 1.786
-
-local seconds = 0
-local minutes = 0
-local hours = 0
-
-while true do
-    wait(1)
-    seconds = seconds + 1
-    if seconds == 60 then
-        seconds = 0
-        minutes = minutes + 1
-    end
-    if minutes == 60 then
-        minutes = 0
-        hours = hours + 1
-    end
-    timelabel.Text = hours .. "H, " .. minutes .. "M, " .. seconds .. "S"
+repeat wait(1) until game:IsLoaded()
+local AlchemyNotify = function(Text_i,Duration_i)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Alchemy Hub V2",
+        Text = Text_i,
+        Duration = Duration_i,
+        Icon = "rbxassetid://14981376704"
+    })
 end
-
+--Key
+wait(0.1)
+AlchemyNotify("Thanks for using Alchemy Hub!",5)
+wait(0.1)
+AlchemyNotify("discord.gg/dUdzZskBCC",5)
+wait(0.5)
+local Notification = require(game:GetService("ReplicatedStorage").Notification)
+Notification.new("<Color=Cyan>Alchemy Hub V2Script<Color=/>"):Display()
+wait(0.5)
+Notification.new("<Color=Yellow>Create By x2Neptune<Color=/>"):Display()
+wait(1)
 repeat
     wait()
 until game.Players.LocalPlayer
 --main
-local minanuiua = "https://pastebin.com"
-local kakatutano = "/raw/sV3fQGLc"
-local ui_link = minanuiua .. kakatutano
+local ui_link = "https://raw.githubusercontent.com/ZoiIntra/Dec/main/afsZz.lua"
 local a = loadstring(game:HttpGet(ui_link))()
-local a = a:Window("Premium | Blox Fruit")
+local a = a:Window("Free Version | Blox Fruit")
 local HomePage = a:Tab("Home", "rbxassetid://16062922985")
-local Main = a:Tab("Farm", "rbxassetid://15712703260")
+local Main = a:Tab("Main", "rbxassetid://15712703260")
 local Set = a:Tab("Setting", "rbxassetid://15712711639")
 local Farm = a:Tab("Other Farm", "rbxassetid://15712717270")
 local Stats = a:Tab("Stats", "rbxassetid://15712723981")
-local Race = a:Tab("Trial", "rbxassetid://15712776421")
-local Event = a:Tab("Event", "rbxassetid://15806749681")
+local Race = a:Tab("Race V4", "rbxassetid://15712776421")
+local Event = a:Tab("Games Event", "rbxassetid://15806749681")
 local Tele = a:Tab("Teleport", "rbxassetid://15712738876")
 local Player = a:Tab("Player", "rbxassetid://15712750195")
-local DemonFruit = a:Tab("Fruits ", "rbxassetid://15712758182")
+local DemonFruit = a:Tab("Devil Fruit", "rbxassetid://15712758182")
 local Raid = a:Tab("Raid", "rbxassetid://15712763124")
 local Shop = a:Tab("Shop", "rbxassetid://15712767144")
 local Misc = a:Tab("Misc", "rbxassetid://15712771666")
 
-HomePage:Seperator("PREMIUM")
+HomePage:Seperator("Alchemy Hub")
 
-HomePage:Label("Blox Fruits Version")
+HomePage:Label("Blox Fruits | English Version")
 
 HomePage:Seperator("Status")
 local AlchemyStatuOn_Time = HomePage:Label("")
-local AlchemyStatuOn_Player = HomePage:Label("User : "..game.Players.LocalPlayer.Name)
+local AlchemyStatuOn_Player = HomePage:Label("Name : "..game.Players.LocalPlayer.Name)
 local AlchemyStatuOn_FPS = HomePage:Label("")
 local AlchemyStatuOn_Ping = HomePage:Label("")
 function AUpdateInfo()
@@ -197,7 +64,11 @@ task.spawn(function()
         AUpdateInfo()
     end
 end)
-HomePage:Label("dsc.gg/nyx-hub")
+HomePage:Label("Join Our Discord for News")
+HomePage:Button("Copy Discord Link", function()
+    AlchemyNotify("Copy Discord Link!",5)
+    setclipboard("https://discord.gg/dUdzZskBCC")
+end)
 -----------------------------------------------------------------------------------------------------------------------------Function
 assert(getrawmetatable)
     grm = getrawmetatable(game)
